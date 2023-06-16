@@ -1,0 +1,203 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial;
+}
+nav{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height:100px; */
+    padding: -30px 90px;
+    box-sizing: border-box;
+    /* background: rgba(0,0,0,6); */
+     border-bottom: 1px solid #fff; 
+}
+nav .logo{
+    padding-top: 30px;
+    display: flex;
+    gap: 10px;
+    /* height: 80px; */
+    float: left;
+    /* font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; */
+    color: #fff;
+    width: 20px;
+    font-style: oblique;
+}
+nav .logo img{
+    width: 100px;
+    height: 80px;
+}
+nav ul{
+    list-style:none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+nav ul li{
+    padding-top: 30px;
+}
+nav ul li a{
+    line-height: 80px;
+    color:#fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+nav ul li a:hover{
+    background: rgba(0,0,0,7);
+    border-radius: 6px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background: url(myImage/canyon-1740973_1280.jpg);
+    text-align: center;
+}
+nav ul li button{
+    line-height: 10px;
+    color:#e96767;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0 );
+}
+#main h1{
+    padding-top: 200px;
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 35px;
+    color: #fff;
+
+}
+#main .filter{
+    line-height: 10px;
+    color:#fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(92, 90, 90, 0);
+    border-radius: 25px;
+    border: 1px solid #fff;
+}
+#main > div{
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 65%;
+    margin: auto;
+    gap:10px;
+    
+}
+#main-bottom{
+
+    padding-top: 210px;
+   
+}
+#main-bottom > div{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background: rgba(255,255,255,0);
+    backdrop-filter: blur(5px);
+}
+#main-bottom > div >div{
+    display: flex;
+    width: 28%;
+    gap:20px;
+    
+}
+#main-bottom > div >h4{
+    display: flex;
+    align-items: center;
+}
+
+
+#main-bottom img{
+    width: 100%;
+    height: 130px;
+}
+#card1{
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+
+}
+#card1 > div{
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#card1 > div > div{
+    display: flex;
+    justify-content: space-around;
+}
+#card1 img{
+    width: 100%;
+}
+#card1 > div:nth-child(2){
+    grid-area: 1/2/3/3;
+    height: 1000px;
+    
+}
+#card1 > div:nth-child(2) img{
+    height: 785px;
+}
+#card1 > h1{
+    font-size: 65px;
+}
+.rating{ 
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+.checked{
+    color: orange;
+}
+
+#mid-butn{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 40px;
+}
+#mid-butn button{
+  line-height: 10px;
+    color:#e96767;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: rgba(67, 94, 212, 0);
+    border-radius: 25px;  
+}
+#text{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 30px;
+}
