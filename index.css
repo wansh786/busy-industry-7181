@@ -179,7 +179,6 @@ nav ul li button{
 .checked{
     color: orange;
 }
-
 .mid-butn{
     padding-top: 30px;
     display: flex;
@@ -346,3 +345,5 @@ nav ul li button{
     background: rgba(0, 0, 0, 0.1);
     padding-bottom: 50px;
 }
+
+
