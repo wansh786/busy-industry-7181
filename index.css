@@ -81,7 +81,7 @@ nav ul li button{
     color: #fff;
 
 }
-#main .filter{
+.filter{
     line-height: 10px;
     color:#fff;
     padding: 12px 30px;
@@ -95,20 +95,21 @@ nav ul li button{
 }
 #main > div{
     background-color: rgba(0,0,0,.5);
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     justify-content: center;
     border-radius: 25px;
     box-sizing: border-box;
     padding-top: 25px;
     padding-bottom: 25px;
-    width: 65%;
+    width: 70%;
     margin: auto;
     gap:10px;
     
 }
 #main-bottom{
 
-    padding-top: 210px;
+    padding-top: 190px;
    
 }
 #main-bottom > div{
@@ -143,11 +144,21 @@ nav ul li button{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
+    /* display: none; */
 
+}
+#card1 > div:nth-child(1),
+#card1 > div:nth-child(2),
+#card1 > div:nth-child(3),
+#card1 > div:nth-child(4),
+#card1 > h1,
+#card1 > div:nth-child(5){
+    display: inline-block;
 }
 #card1 > div{
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
 }
 #card1 > div > div{
     display: flex;
@@ -155,19 +166,20 @@ nav ul li button{
 }
 #card1 img{
     width: 100%;
+    height: 370px;
 }
 #card1 > div:nth-child(2){
     grid-area: 1/2/3/3;
-    height: 1000px;
+    height: 1100px;
     
 }
 #card1 > div:nth-child(2) img{
-    height: 785px;
+    height: 930px;
 }
 #card1 > h1{
     font-size: 65px;
     padding-top: 50px;
-}
+}  
 .rating{ 
     top:50%;
     left:50%;
@@ -197,7 +209,12 @@ nav ul li button{
     font-weight: bold;
     text-transform: uppercase;
     background: rgba(67, 94, 212, 0);
-    border-radius: 25px;  
+    border-radius: 25px;
+    cursor: pointer;  
+}
+.mid-butn button:hover{
+    background: rgba(0,0,0,7);
+    border-radius: 6px;
 }
 .text{
     text-align: center;
@@ -228,6 +245,10 @@ nav ul li button{
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-bottom: 10px;
+}
+#card2 > div:hover{
+    transform: scale(1.1);
+    border-radius: 6px;
 }
 #card2 > div > div{
     display: flex;
@@ -335,6 +356,7 @@ nav ul li button{
     grid-template-columns: repeat(3,1fr);
     text-align: center;
     gap: 20px;
+    padding-bottom: 0px;
     
 }
 #card5 img{
@@ -346,3 +368,159 @@ nav ul li button{
     background: rgba(0, 0, 0, 0.1);
     padding-bottom: 50px;
 }
+#div2{
+    background-color: rgb(92, 144, 194);
+    padding-bottom: 0px;
+    color: #fff;
+    border: 1px solid red;
+}
+.filter2{
+    line-height: 10px;
+    color:#fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #f49d9d;
+}
+#main2{
+    text-align: center;
+}
+#main2 > input:nth-child(1){
+    width: 400px;
+}
+#bottom{
+    padding-top: 50px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid #fff;
+    
+}
+#bottom > div{
+    width: 25%;
+    text-align: center;
+}
+#bottom > div:nth-child(1) > h4{
+    padding-bottom: 40px;
+}
+.iconic{
+    
+    width: 100%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.iconic i{
+    padding-top: 20px;
+    padding-left: 100px;
+}
+#follow{
+    display: flex;
+    justify-content: center;
+}
+#follow > div{
+    display: flex;
+    gap: 20px;
+}
+#follow i{
+    padding-top: 75px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    /* Medium Screen  */
+    nav ul{
+        display: none;
+    }
+    #main > div{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #main-bottom{
+        display: none;
+    }
+    #card1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #card1 > div:nth-child(2){
+        grid-area: 1/2/3/3;
+        height: 1100px;
+        
+    }
+    #card2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #card4{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #card5{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #bottom{
+        display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        #bottom > div{
+            width: 50%;
+            text-align: center;
+        }
+    }
+   
+
+
+  
+
+  @media only screen and (max-width: 600px) {
+    /* Small Screen  */
+    nav ul{
+        display: none;
+    }
+    #main > div{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #main-bottom{
+        display: none;
+    }
+    #card1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #card1 > div:nth-child(2){
+        grid-area: 2/1/3/2;
+        height: 1100px;
+        
+    }
+    #card2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #card2 > div > div{
+        display: flex;
+        justify-content: space-around;
+        gap: 35px;
+    }
+    #card4{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #card5{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #bottom{
+        display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+    #main2 > input:nth-child(1){
+        width: 200px;
+    }
+    #bottom > div{
+        width: 100%;
+        text-align: center;
+    }
+    #main h1{
+        padding-top: 100px;
+    }    
+
+  }
+
